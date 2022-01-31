@@ -1,0 +1,19 @@
+.field{
+    width: 100%;
+}
+
+.card{
+    width: 70%;
+    margin:auto;
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+    margin-top: 4rem;
+}
+ .reset{
+     margin-left: 10px;
+ }

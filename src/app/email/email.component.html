@@ -1,0 +1,26 @@
+<div class="container">
+
+    <div class="card">
+        <form >
+        <h1>Compose Mail....</h1>
+        <mat-form-field class="field" appearance="outline">
+            <mat-label>To</mat-label>
+            <input name="to" [(ngModel)]="data.to" matInput>
+            <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+            <mat-hint>Enter receiver's Email address</mat-hint>
+        </mat-form-field>
+        <mat-form-field class="field" appearance="outline">
+            <mat-label>Subject</mat-label>
+            <input name="subject" [(ngModel)]="data.subject" matInput placeholder>
+            <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+            <mat-hint>Enter Subject of Email</mat-hint>
+        </mat-form-field>
+        <mat-form-field class="field" appearance="fill">
+            <mat-label >Enter Your Message</mat-label>
+            <textarea name="message" [(ngModel)]="data.message" rows="10" matInput></textarea>
+          </mat-form-field>
+          <button mat-raised-button (click)="submitForm()" color="primary">Send Mail</button>
+          <button mat-raised-button (click)="reset()" class="reset"color="warn">Reset</button>
+        </form>
+    </div>
+</div>
